@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "sessionStart": [
+      {
+        "type": "command",
+        "command": "pwsh -NoProfile -File .github/hooks/scripts/qe-session-start.ps1"
+      }
+    ],
+    "postToolUse": [
+      {
+        "type": "command",
+        "command": "pwsh -NoProfile -File .github/hooks/scripts/qe-post-tool-use.ps1"
+      }
+    ]
+  }
+}
+
